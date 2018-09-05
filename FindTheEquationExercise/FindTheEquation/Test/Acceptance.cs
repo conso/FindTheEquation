@@ -1,10 +1,14 @@
-﻿using NUnit.Framework;
+﻿using System.Linq;
+using NUnit.Framework;
 
 namespace FindTheEquation.Test
 {
     [TestFixture]
     public class Acceptance
     {
+        private EquationFinderController _equationFinderController;
+        private string[] _outcome;
+
         [Test]
         public void Scenario_50()
         {
@@ -17,17 +21,17 @@ namespace FindTheEquation.Test
 
         private void Given_The_Digits(string setupDigits)
         {
-            throw new System.NotImplementedException();
+            _equationFinderController = new EquationFinderController(setupDigits);
         }
 
         private void When_Finding_Equations_For(int inputValue)
         {
-            throw new System.NotImplementedException();
+            _outcome = _equationFinderController.FindEquationsFor(inputValue);
         }
 
         private void Then_Outcome_Should_Contain(string expectedOutcome)
         {
-            throw new System.NotImplementedException();
+            Assert.That(_outcome.Contains(expectedOutcome));
         }
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EquationFinderController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\Acceptance.cs" />
   </ItemGroup>
