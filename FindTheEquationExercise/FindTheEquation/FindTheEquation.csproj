@@ -61,10 +61,12 @@
     <Compile Include="App\ExpressionCalculator.cs" />
     <Compile Include="App\ICalculateExpressions.cs" />
     <Compile Include="App\IFindAllPermutations.cs" />
+    <Compile Include="App\DigitsIterator.cs" />
     <Compile Include="App\Permutator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\Acceptance.cs" />
     <Compile Include="Test\EquationFinder_Should.cs" />
+    <Compile Include="Test\Permutator_Should.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
