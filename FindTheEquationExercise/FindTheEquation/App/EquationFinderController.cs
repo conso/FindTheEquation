@@ -8,9 +8,7 @@
         {
             var definedOperations = new[] {"+", "-", "j"};
             IFindAllPermutations permutator = new Permutator(setupDigits, definedOperations);
-            ICalculateExpressions expressionCalculator = new ExpressionCalculator();
-            
-            _equationFinder = new EquationFinder(permutator, expressionCalculator);
+            _equationFinder = new EquationFinder(permutator);
         }
 
         public string[] FindEquationsFor(int inputValue)
